@@ -21,7 +21,7 @@ The Fisher Yates shuffle is algorithm for generating a random unbiased permutati
   4. Repeat from step 2 until all the numbers have been struck out.
   5. The sequence of numbers written down in step 3 is now a random permutation of the original numbers.
   
-If implemented in code it would result in a run time of O(n^2) because each loop in step three it would have to loop through the array counting the entrices to strike out the needed one. To adapt this algorithm to computers the striking out of entrices was changed to moving the struck entrices to the end of the array by swapping them with the last unstruck number. This modern implementation of the Fisher Yates Shuffle, also know as the Knuth Shuffle is implemented below as extension methods in C#:
+If implemented in code it would result in a run time of O(n^2) because each loop in step three it would have to loop through the array counting the entrices to strike out the needed one. To adapt this algorithm to computers the striking out of entrices was changed to moving the struck entrices to the end of the array by swapping them with the last unstruck number. Making the change to shuffle the array in place by swapping values reduces the time complexity to O(n), n being the size of the array being shuffled. This modern implementation of the Fisher Yates Shuffle, also know as the Knuth Shuffle is implemented below as extension methods in C#:
       
 ```cs
     public static void DoFisherYatesShuffle(this object[] objects)
