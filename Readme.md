@@ -9,3 +9,7 @@ This week I implemented methods that illustrate my understanding of three big-O 
 - [**Constant Time O(1)**]
 - [**Linear Time O(n)**]
 - [**Quadratic time O(n^2)**]
+
+## Week 5
+
+This week was about the Fisher Yates Shuffle. The Fisher Yates Shuffle is a algorithm for generating a random permutation of a finite sequence

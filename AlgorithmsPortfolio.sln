@@ -3,7 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmsPortfolio", "AlgorithmsPortfolio\AlgorithmsPortfolio.csproj", "{9084E488-C4B4-4569-98BC-B4805DA88A8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorithmsPortfolio", "AlgorithmsPortfolio\AlgorithmsPortfolio.csproj", "{9084E488-C4B4-4569-98BC-B4805DA88A8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "Algorithms\Algorithms.csproj", "{FFDA6095-CFDF-4B6D-A9A8-A623229EB858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FisherYatesCardShuffle", "FisherYatesCardShuffle\FisherYatesCardShuffle.csproj", "{8602612A-C3E7-44AB-99A7-EF5D8E956998}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A81D3FFC-DE25-46F9-8BA8-85CEB62F9F73}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +24,14 @@ Global
 		{9084E488-C4B4-4569-98BC-B4805DA88A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9084E488-C4B4-4569-98BC-B4805DA88A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9084E488-C4B4-4569-98BC-B4805DA88A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFDA6095-CFDF-4B6D-A9A8-A623229EB858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDA6095-CFDF-4B6D-A9A8-A623229EB858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFDA6095-CFDF-4B6D-A9A8-A623229EB858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFDA6095-CFDF-4B6D-A9A8-A623229EB858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8602612A-C3E7-44AB-99A7-EF5D8E956998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8602612A-C3E7-44AB-99A7-EF5D8E956998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8602612A-C3E7-44AB-99A7-EF5D8E956998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8602612A-C3E7-44AB-99A7-EF5D8E956998}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
