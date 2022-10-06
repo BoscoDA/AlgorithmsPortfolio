@@ -50,7 +50,7 @@ If implemented in code it would result in a run time of O(n^2) because each loop
 
 An example of the Fisher Yates shuffle in the context of a simple console application which generates a deck of cards and them shuffles was also completed for this week.
 
-[Named Link](http://www.google.fr/ "Named link title")
+[Named Link](https://github.com/BoscoDA/AlgorithmsPortfolio/tree/master/FisherYatesCardShuffle "Named link title")
 
 
 
