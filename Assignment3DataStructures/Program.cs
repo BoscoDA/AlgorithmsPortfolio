@@ -35,7 +35,7 @@ namespace Assignment3DataStructures
             // Fixed Capacity, must know the size of the data beforehand. With only way to increase capacity creating a new array.
             // Zero Indexed (indexed from 0 to n-1)
             // Can be randomly accessed, as long as the index is within the bounds of the array
-            // Are Contiguous Memory (stored in a block in one place), but also obbjects in C#
+            // Are Contiguous Memory (stored in a block in one place), but also objects in C#
             // Operation speeds: Insert: O(1) Access: O(1) Search: O(n) Remove: O(n)
             Account[] arryAccounts = DataLoader.LoadXMLIntoArray(fileName);
             
