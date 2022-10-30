@@ -21,7 +21,7 @@ namespace Assignment3DataStructures
             // Operation Speeds: Push: O(1)O(1) Pop: O(1)O(1) Peek: O(1)O(1)
             Stack<char> stack = new Stack<char>();
 
-            // FIFO (First-In, First-Out)
+            //FIFO(First - In, First - Out)
             // Easiest to implement using a linked list, in C# the queue class utilizes a circular array
             // No random access
             // Can peek at the first item / head.
