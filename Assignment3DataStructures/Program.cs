@@ -52,6 +52,7 @@ namespace Assignment3DataStructures
             //Hashtables are more efficient than arrays when it comes to removing items and searching
 
             //If this was a online ticketing application...
+            // We would want to use a hash table for storing account information because it would make it easy to then look up the account via username later when the user want to log back in.
             Console.WriteLine("-----------------------Hash Table VS. Array-----------------------");
             Console.WriteLine("Example 1: Login Feature - You would use a hash table because if the data is large enough and a key such and the data is stored with the email as the key it" +
                 "will be 0(1) time to access the data rather than O(n) with an array.");
@@ -93,9 +94,10 @@ namespace Assignment3DataStructures
             //If you wanted to check if the string was a palindrome you could use a stack to reverse the order.
             Console.WriteLine("-----------------------Stack VS. Queue-----------------------");
 
-            string word = "array";
+            Console.Write("Please enter a word: ");
+            string word = Console.ReadLine().ToString();
 
-            Console.WriteLine($"Storing the string\"Array\" in a stack and queue");
+            Console.WriteLine($"Storing the string\"{word}\" in a stack and queue");
             foreach (char c in word)
             {
                 queue.Enqueue(c);
