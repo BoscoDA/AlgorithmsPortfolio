@@ -36,6 +36,10 @@ While(not_sorted)
 End While
 End Bubblesort
 ```
+
+### Visual Representation
+![Alt Text](https://cdn.emre.me/sorting/bubble_sort.gif)
+
 ## Insertion Sort
 ### Description
 Insertion sort is a simple sorting algorithm that builds the final sorted set 
@@ -57,6 +61,10 @@ Insertionsort(Data: values[])
     Next i
 End Insertionsort
 ```
+
+### Visual Representation
+![Alt Text](https://cdn.emre.me/sorting/insertion_sort.gif)
+
 ## Selection Sort
 ### Description
 Sorts an array by repeatedly finding the minimum element (considering ascending order)
@@ -77,6 +85,9 @@ Selectionsort(Data: values[])
     Next i
 End Selectionsort
 ```
+
+### Visual Representation
+![Alt Text](https://cdn.emre.me/sorting/selection_sort.gif)
 
 ## Quick Sort
 
@@ -129,6 +140,10 @@ partition(arr[], low, high)
   return (i + 1)
 }
 ```
+
+### Visual Representation
+![Alt Text](https://cdn.emre.me/sorting/quick_sort_hoare.gif)
+
 ## Merge Sort
 ### Description
 Like quicksort, mergesort uses a divide-and-conquer strategy. Instead
@@ -183,6 +198,9 @@ Mergesort(Data: values[], Data: scratch[], Integer: start, Integer: end)
     Next i
 End Mergesort
 ```
+
+### Visual Representation
+![Alt Text](https://cdn.emre.me/sorting/merge_sort.gif)
 
 ## Heap Sort
 ### Description
@@ -252,3 +270,6 @@ Heapify(int[] values, int size, int root)
 
 end Heapify
 ```
+
+### Visual Representation
+![Alt Text](https://cdn.emre.me/sorting/heap_sort.gif)
