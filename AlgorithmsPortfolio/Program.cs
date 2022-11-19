@@ -17,11 +17,11 @@ namespace AlgorithmsPortfolio
             //    Console.Write(l + " ");
             //}
 
-            //List<int> fact = PrimeFactorization.Factor2(666);
-            //foreach(int i in fact)
-            //{
-            //    Console.Write(i + " ");
-            //}
+            List<int> fact = PrimeFactorization.Factor2(6);
+            foreach (int i in fact)
+            {
+                Console.Write(i + " ");
+            }
 
 
             Console.ReadKey();

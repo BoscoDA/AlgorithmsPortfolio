@@ -16,9 +16,9 @@ namespace Assignment3DataStructures
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
             XmlNode? root = doc.DocumentElement;
-            XmlNodeList? accountList = root.SelectNodes("/accounts/account");
+            XmlNodeList? accountList = root!.SelectNodes("/accounts/account");
             doc.AppendChild(root);
-            foreach (XmlElement c in accountList)
+            foreach (XmlElement c in accountList!)
             {
                 accounts.Push(new Account()
                 {
@@ -37,9 +37,9 @@ namespace Assignment3DataStructures
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
             XmlNode? root = doc.DocumentElement;
-            XmlNodeList? accountList = root.SelectNodes("/accounts/account");
+            XmlNodeList? accountList = root!.SelectNodes("/accounts/account");
             doc.AppendChild(root);
-            foreach (XmlElement c in accountList)
+            foreach (XmlElement c in accountList!)
             {
                 accounts.Enqueue(new Account()
                 {
@@ -58,10 +58,10 @@ namespace Assignment3DataStructures
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
             XmlNode? root = doc.DocumentElement;
-            XmlNodeList? accountList = root.SelectNodes("/accounts/account");
+            XmlNodeList? accountList = root!.SelectNodes("/accounts/account");
             doc.AppendChild(root);
             int i = 0;
-            foreach (XmlElement c in accountList)
+            foreach (XmlElement c in accountList!)
             {
                 accounts[i] = (new Account()
                 {
@@ -81,9 +81,9 @@ namespace Assignment3DataStructures
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
             XmlNode? root = doc.DocumentElement;
-            XmlNodeList? accountList = root.SelectNodes("/accounts/account");
+            XmlNodeList? accountList = root!.SelectNodes("/accounts/account");
             doc.AppendChild(root);
-            foreach (XmlElement c in accountList)
+            foreach (XmlElement c in accountList!)
             {
                 Account temp = new Account()
                 {
