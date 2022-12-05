@@ -5,6 +5,9 @@ has no parent nodes.
 
 The depth of a tree is the number of links/nodes from the root to the node you are measuring. The Height of a tree
 is the number of links/nodes from the root to the furthest node.
+
+![Alt Text](https://www.tutorialspoint.com/data_structures_algorithms/images/binary_tree.jpg)
+
 ## Binary Tree
 A binary trees is a specific type of tree where each node may have at most two child nodes conneted to it, one to the left
 and one to the right. There can be duplicate values. 
