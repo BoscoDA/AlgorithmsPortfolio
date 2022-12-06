@@ -30,8 +30,8 @@ namespace Assignment6Searching
 
             Console.WriteLine("---------------------------- Linear Search ----------------------------");
             Console.WriteLine(@"Description: The linear search algorithm iterates through each element
-             of the data set comparing each to the target until the 
-             target is either found of the algorithm reaches the 
+             of the data set comparing each element to the target until the 
+             target is either found or the algorithm reaches the 
              end of the data set.");
             Console.WriteLine("\nAsymptotic Notation: Worst Case: O(n) Best Case: O(1) Average: O(n/2)\n");
             Console.WriteLine(@"Pseudocode:
@@ -54,7 +54,7 @@ end LinearSearch");
              equal, the algorithm then checks to see which half
              of the data set will contain the target. This is
              then recursively or iteratively repeated until the
-             target is found of the algorithm reachs the end of 
+             target is found or the algorithm reachs the end of 
              the data set.");
             Console.WriteLine("\nAsymptotic Notation: O(logn)\n");
             Console.WriteLine(@"Pseudocode:
