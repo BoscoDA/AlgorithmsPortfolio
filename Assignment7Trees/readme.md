@@ -6,11 +6,18 @@ has no parent nodes.
 The depth of a tree is the number of links/nodes from the root to the node you are measuring. The Height of a tree
 is the number of links/nodes from the root to the furthest node.
 
-![Alt Text](https://www.tutorialspoint.com/data_structures_algorithms/images/binary_tree.jpg)
+<p align="center">
+  <img src="https://miro.medium.com/max/720/1*Z89j_NoDx9HkFcPHy3rPZg.webp" />
+</p>
+
 
 ## Binary Tree
 A binary trees is a specific type of tree where each node may have at most two child nodes conneted to it, one to the left
 and one to the right. There can be duplicate values. 
+
+<p align="center">
+  <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_tree.jpg" />
+</p>
 
 ### Implementation
 - Each level is filled up before another level is added
@@ -20,6 +27,8 @@ and one to the right. There can be duplicate values.
 Also known as a ordered or sorted binary tree, it is a rooted binary tree which stores values less than the root in the left
 subtree and values which are larger than the root in the right subtree. Each subtree in the tree must also follow this pattern.
 There can be no duplicate values.
+
+![Alt Text](https://www.guru99.com/images/1/020820_0600_BinarySearc1.png)
 
 ### Implementation
 Filled up by values larger of the root/parent going to the right and the values smaller than the root/parent going
@@ -34,6 +43,10 @@ There are three way to traverse a binary tree:
 ## Heaps
 A heap is a specialized tree-based data strucutre. In a heap, the highest or lowest priority element is always stored at the
 root. Heaps are commonly used as a implementation for a priotiy queue and for heap sort.
+
+<p align="center">
+  <img src="https://www.geeksforgeeks.org/wp-content/uploads/MinHeapAndMaxHeap.png" />
+</p>
 
 ### Max Heap
 In a max heap the largest value is always at the top, then each parent in both the left and right subtrees are smaller than the
