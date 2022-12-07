@@ -82,7 +82,7 @@ namespace Assignment7Trees
             Root = new Node(value);
         }
 
-        public Node Insert(Node root, int value)
+        public static Node Insert(Node root, int value)
         {
             if (root == null)
             {
@@ -100,15 +100,84 @@ namespace Assignment7Trees
             return root;
         }
 
-
-        public void Remove()
+        public static Node Remove(Node? root, int value)
         {
+            //Find the node you want
+            //When found:
+            //  Check if node has 0, 1 or 2 children
+            //  0 child = leaf - Just Delete
+            //  1 child = copy child node to the current node
+            //  2 child = determine next highest inorder successor in right subtree.
+            //            replace the node to be removed with inorder successor.
+            //            delete inorder successor duplicate
+            if(root == null)
+            {
+                return root!;
+            }
 
+            if(value < root.Value)
+            {
+                root.Left = Remove(root.Left!, value);
+            }
+            else if(value > root.Value)
+            {
+                root.Right = Remove(root.Right!, value);
+            }
+            else
+            {
+                if(root.Left == null)
+                {
+                    return root.Right!;
+                }
+                else if(root.Right == null)
+                {
+                    return root.Left;
+                }
+
+                root.Value = inOrderSuccessor(root.Right);
+                root.Right = Remove(root.Right, root.Value);
+            }
+
+            return root;
         }
 
+        public static int inOrderSuccessor(Node root)
+        {
+            int min = root.Value;
+            while(root.Left != null)
+            {
+                min = root.Left.Value;
+                root = root.Left;
+            }
+            return min;
+        }
 
+        public static bool Search(Node root, int value)
+        {
+            if(root == null)
+            {
+                return false;
+            }
 
-        public void PreOrderTraversal(Node? root)
+            if(root.Value == value)
+            {
+                return true;
+            }
+
+            else if(value < root.Value)
+            {
+                return Search(root.Left!, value);
+            }
+
+            else if(value > root.Value)
+            {
+                return Search(root.Right!, value);
+            }
+
+            return false;
+        }
+
+        public static void PreOrderTraversal(Node? root)
         {
             if (root != null)
             {
@@ -118,7 +187,7 @@ namespace Assignment7Trees
             }
         }
 
-        public void InOrderTraversal(Node? root)
+        public static void InOrderTraversal(Node? root)
         {
             if (root != null)
             {
@@ -128,7 +197,7 @@ namespace Assignment7Trees
             }
         }
 
-        public void PostOrderTraversal(Node? root)
+        public static void PostOrderTraversal(Node? root)
         {
             if (root != null)
             {
